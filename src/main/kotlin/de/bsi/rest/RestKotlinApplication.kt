@@ -1,11 +1,11 @@
-package de.bsi.restkotlin2
+package de.bsi.rest
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
-class RestKotlin2Application
+@SpringBootApplication(scanBasePackages = ["de.bsi"])
+class RestKotlinApplication
 
 fun main(args: Array<String>) {
-	runApplication<RestKotlin2Application>(*args)
+	runApplication<RestKotlinApplication>(*args)
 }

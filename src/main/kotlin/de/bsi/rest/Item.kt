@@ -1,4 +1,4 @@
-package de.bsi.restkotlin2
+package de.bsi.rest
 
 import java.util.*
 

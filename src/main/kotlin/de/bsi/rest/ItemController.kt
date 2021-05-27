@@ -1,4 +1,4 @@
-package de.bsi.restkotlin2
+package de.bsi.rest
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/item")
 class ItemController {
 
-    val items = mutableListOf<Item>();
+    val items = mutableListOf<Item>()
 
     @GetMapping
     fun getItemByName(@RequestParam(required = true) itemName: String): ResponseEntity<Item> =
